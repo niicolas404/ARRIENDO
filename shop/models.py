@@ -21,4 +21,4 @@ class Arriendo(models.Model):
         return f"{self.cliente} - {self.equipo.nombre}"
     
     def precio_formateado(self):
-        return f"${self.precio:,.2f}".replace(",", ".")
+        return f"${self.precio:,.0f}".replace(",", ".")
